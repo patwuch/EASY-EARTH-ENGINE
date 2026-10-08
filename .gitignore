@@ -18,7 +18,6 @@ frontend/node_modules/
 .pixi.pid
 .pixi.port
 pixi.log
-pixi.lock
 
 # --- Python ---
 __pycache__/
