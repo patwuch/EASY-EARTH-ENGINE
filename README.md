@@ -2,6 +2,10 @@
 
 A browser-based tool for downloading satellite data (precipitation, temperature, vegetation, land cover, and more) from Google Earth Engine for any area you choose.
 
+## New Feature!
+
+Introducing new product **Dynamic World V1 - Border Zones**. In regional studies, due to finer spatial granularity, administrative effort in tracking mobility or connection is oftentimes completely absent. Dynamic World V1 - Border Zones computes a naive connectivity index based off of pixels identified along the border of two neighboring polygons based off of Dynamic World V1's labelling of each pixel as a specific land use purpose (built-up, grasslands, bodies of water). The index serves only as a proxy of estimation in connectivity, and are subject to the same biases ingrained in the original dataset itself.
+
 ## Getting the app
 
 If you are on this GitHub page, click the green **Code** button near the top right, then select **Download ZIP**. Once downloaded, extract the ZIP to a folder you are happy with — then follow the instructions below.

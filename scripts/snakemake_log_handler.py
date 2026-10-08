@@ -250,11 +250,11 @@ def _dispatch(log: dict):
                     _start_tail(int(jobid), log_path, f"merge/{prod}", _merge_line_filter)
             return
 
-        if rule == "preprocess_aoi":
+        if rule in ("preprocess_aoi", "preprocess_borders"):
             log_files = log.get("log") or []
             log_path  = log_files[0] if log_files else None
             if jobid is not None and log_path:
-                _start_tail(int(jobid), log_path, "preprocess_aoi")
+                _start_tail(int(jobid), log_path, rule)
             return
 
         # Only track the GEE extraction step for job status — convert_to_parquet
